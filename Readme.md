@@ -32,20 +32,33 @@ git push -u origin master //Tells it to push master branch to origin (GitHub)
 1. Check repo on GitHub to make sure you have all the files
 1. Add repo to checkout script (it makes sense, I swear!)
 
+## Checking out code
+1.Clone this project to your desktop (run comands in git bash)
+
+```
+git clone git@github.com:awguild/WebGuild.git ~/desktop/WebGuild
+sh ~/desktop/WebGuild/scripts/Windowscheckout.sh (type yes if prompted for rsa fingerprint)
+```
+
 ## Doing an update
+1. Make sure Apache is running in XAMPP
 1. Open the folder in a text editor
 1. Open the git bash 
 
 ```
 cd /c/xampp/htdocs/<projectName>
 ```
-1. Pull newest changes git pull origin
+1. Pull newest changes 
+```
+git pull origin
+```
 1. Create a new branch
 
 ```
 git checkout -b [Name]
 ```
 1. Make edits to files
+1. Open Git Gui and open repo for this project 
 1. In the Git GUI Rescan, stage changes, commit
 1. In the bash 
 
