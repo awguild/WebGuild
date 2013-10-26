@@ -36,7 +36,7 @@ git push -u origin master //Tells it to push master branch to origin (GitHub)
 1.Clone this project to your desktop (run comands in git bash)
 
 ```
-git clone https://github.com/awguild/WebGuild.git ~/desktop/WebGuild
+git clone git@github.com:awguild/WebGuild.git ~/desktop/WebGuild
 sh ~/desktop/WebGuild/scripts/Windowscheckout.sh (type yes if prompted for rsa fingerprint)
 ```
 
