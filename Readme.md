@@ -62,3 +62,4 @@ git checkout master
 git pull origin master
 git branch -d [Name]
 ```
+1. Copy files from htdocs to folder on freya
