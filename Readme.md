@@ -5,11 +5,11 @@
 ### Install software
   1. Download and install [xampp](http://www.apachefriends.org/en/xampp.html)
   1. Download and install [git](http://git-scm.com/downloads)
-  1. Configure git by running these commands from the git bash
-  
+  1. Configure git by running these commands from the git bash *(without the &lt;&gt;)*
+
     ```
-    git config --global user.name "[Name]"
-    git config --global user.email [email address]
+    git config --global user.name "<Name>"
+    git config --global user.email <email address>
     ```
 
 ### Create an account on Github
@@ -42,32 +42,32 @@
     ```
     git pull origin
     ```
-  1. Create a new branch
+  1. Create a new branch *(without the &lt;&gt;)*
 
     ```
-    git checkout -b [Name]
+    git checkout -b <name>
     ```
   1. Edits files to satisfy user story
-  1. Stage changes and commit
+  1. Stage changes and commit *(without the &lt;&gt;)*
    
     ```
     git add .
-    git commit -m "[description of what you did in this commit]"
+    git commit -m "<description of what you did in this commit>"
     ```
-  1. Push your feature branch to github
+  1. Push your feature branch to github *(without the &lt;&gt;)*
 
     ```
-    git push -u origin [Name]
+    git push -u origin <name>
     ```
-  1. Create a pull request (use [fixes #*storyID* in the commit message)
+  1. Create a pull request. Use [fixes #*storyID*] in the commit message *(WITH the brackets)*
   1. Merge pull request (if applicable wait for someone to review your work)
   1. Delete your feature branch from github (click the *delete branch* button)
-  1. Clean up your local repo 
+  1. Clean up your local repo *(without the &lt;&gt;)*
 
     ```
     git checkout master
     git pull origin master
-    git branch -d [feature branch name]
+    git branch -d <feature branch name>
     ```
   1. Copy files from htdocs to folder on freya (until we have post commit hooks set up)
 
