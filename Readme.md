@@ -91,3 +91,4 @@
   1. Grab the api token from AugustanaWebGuild > Profile
   1. Click the Settings > Service Hooks on the github repo (not account settings, the repo settings)
   1. Paste the api token, check the active box, and hit update
+  1. Add the repo to the developers team on github so that members of that team can push changes to the code
