@@ -6,6 +6,7 @@
   1. Download and install [xampp](http://www.apachefriends.org/en/xampp.html)
   1. Download and install [git](http://git-scm.com/downloads)
   1. Configure git by running these commands from the git bash
+  
     ```
     git config --global user.name "[Name]"
     git config --global user.email [email address]
