@@ -3,20 +3,25 @@
 ## Developer information
 
 ### Install software
-1. Download and install [xampp](http://www.apachefriends.org/en/xampp.html)
-1. Download and install [git](http://git-scm.com/downloads)
+  1. Download and install [xampp](http://www.apachefriends.org/en/xampp.html)
+  1. Download and install [git](http://git-scm.com/downloads)
+  1. Configure git by running these commands from the git bash
+    ```
+    git config --global user.name "[Name]"
+    git config --global user.email [email address]
+    ```
 
 ### Create an account on Github
-1. Go to github.com and sign up
-1. Click account settings > SSH Keys *(Follow the instructions in need help you might have run ``` mkdir ./ssh ``` before ``` cd ./ssh ```)*
-1. Email guild@augustana.edu with your github username and request to be added to the developers team
+  1. Go to github.com and sign up
+  1. Click account settings > SSH Keys *(Click the "need help" link and follow the instructions to create an ssh key.  You will probably need to run ``` mkdir ./ssh ``` before running ``` cd ./ssh ```)*
+  1. Email guild@augustana.edu with your github username and request to be added to the developers team
 
 ### Create an account on pivotal tracker
-1. Sign up on the [pivotal tracker website](https://www.pivotaltracker.com/)
-1. Email guild@augustana.edu and request to be added to Development Projects
+  1. Sign up on the [pivotal tracker website](https://www.pivotaltracker.com/)
+  1. Email guild@augustana.edu and request to be added to Development Projects
 
 ### Checking out code
-1. Clone this project to your desktop *(run comands in git bash)*
+  1. Clone this project to your desktop *(run comands in git bash)*
 
     ```
     git clone git@github.com:awguild/WebGuild.git ~/desktop/WebGuild
