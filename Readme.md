@@ -15,7 +15,7 @@
 1. Sign up on the [pivotal tracker website](https://www.pivotaltracker.com/)
 1. Email guild@augustana.edu and request to be added to Development Projects
 
-## Checking out code
+### Checking out code
 1. Clone this project to your desktop *(run comands in git bash)*
 
     ```
@@ -23,57 +23,56 @@
     sh ~/desktop/WebGuild/scripts/Windowscheckout.sh //type yes if prompted for rsa fingerprint
     ```
 
-## Doing an update
-1. Make sure Apache is running in XAMPP
-1. Open the project's folder in a text editor (like Sublime)
-1. Open the git bash 
+### Doing an update
+  1. Make sure Apache is running in XAMPP
+  1. Open the project's folder in a text editor (like Sublime)
+  1. Open the git bash 
 
     ```
     cd /c/xampp/htdocs/<projectName>
     ```
-1. Pull newest changes 
+  1. Pull newest changes 
     
     ```
     git pull origin
     ```
-1. Create a new branch
+  1. Create a new branch
 
     ```
     git checkout -b [Name]
     ```
-1. Edits files to satisfy user story
-1. Stage changes and commit
+  1. Edits files to satisfy user story
+  1. Stage changes and commit
    
     ```
     git add .
     git commit -m "[description of what you did in this commit]"
     ```
-1. Push your feature branch to github
+  1. Push your feature branch to github
 
     ```
     git push -u origin [Name]
     ```
-1. Create a pull request (use [fixes #*storyID* in the commit message)
-1. Merge pull request (if applicable wait for someone to review your work)
-1. Delete your feature branch from github (click the *delete branch* button)
-1. Clean up your local repo 
+  1. Create a pull request (use [fixes #*storyID* in the commit message)
+  1. Merge pull request (if applicable wait for someone to review your work)
+  1. Delete your feature branch from github (click the *delete branch* button)
+  1. Clean up your local repo 
 
     ```
     git checkout master
     git pull origin master
     git branch -d [feature branch name]
     ```
-1. Copy files from htdocs to folder on freya (until we have post commit hooks set up)
+  1. Copy files from htdocs to folder on freya (until we have post commit hooks set up)
 
 ## Administrative Tasks
 
 ###Creating new repo
-*Note: you have to be an owner on the awguild organization to do this*
-1. Sign in and change your context to awguild
-1. Click the *New repository* button (Set the repo name to match the folder name in freya; set to public; ignore README;)
-1. Click *Create Repository*
-1. Copy code from freya to the desktop
-1. In GitBash, do 
+  1. Sign in to github and change your context to awguild
+  1. Click the *New repository* button (Set the repo name to match the folder name in freya; set to public; ignore README;)
+  1. Click *Create Repository*
+  1. Copy code from freya to the desktop
+  1. In GitBash, do 
 
     ```
     cd ~/Desktop/<NameOfProject> //changes directory to project directory
@@ -83,9 +82,12 @@
     git remote add origin <SSH URL> //creates a new remote called origin that points to this project's Github SSH URL
     git push -u origin master //pushes the master branch to your origin remote (GitHub)
     ```
-1. Check repo on GitHub to make sure you have all the files
-1. Add repo to checkout script(s), should look like
+  1. Check repo on GitHub to make sure you have all the files
+  1. Add repo to checkout script(s), should look like
    ```
    git clone git@github.com:awguild/<projectName>.git /C/xampp/htdocs/<projectName>
    ```
-
+  1. Log into pivotal tracker as guild@augustana.edu
+  1. Grab the api token from AugustanaWebGuild > Profile
+  1. Click the Settings > Service Hooks on the github repo (not account settings, the repo settings)
+  1. Paste the api token, check the active box, and hit update
